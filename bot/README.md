@@ -36,10 +36,9 @@ requests.post('https://notify-api.line.me/api/notify', headers=headers, data=dat
 
 #### 1차 수정 
 - **변경 전** : 4,000원대와 5,000원대 함께 출력    
-- **변경 후** : 4,000원대 상품이 있는 경우, 5,000원대 상품 출력X  → [코드 보기](https://github.com/haedal-project/python/blob/b282b3c66a8e3b9a59dd206eed5a015d7e83a484/bot/coupang.py#L69)
-
-      
-**&** 4,000원대 상품이 없는 경우 상품이 없다는 메세지 + 5,000원대 상품 출력 → [코드보기](https://github.com/haedal-project/python/blob/b282b3c66a8e3b9a59dd206eed5a015d7e83a484/bot/coupang.py#L67)   
+- **변경 후**              
+4,000원대 상품이 있는 경우, 5,000원대 상품 출력X  → [코드 보기](https://github.com/haedal-project/python/blob/b282b3c66a8e3b9a59dd206eed5a015d7e83a484/bot/coupang.py#L69)        
+**&** 4,000원대 상품이 없는 경우, 상품이 없다는 메세지 + 5,000원대 상품 출력 → [코드보기](https://github.com/haedal-project/python/blob/b282b3c66a8e3b9a59dd206eed5a015d7e83a484/bot/coupang.py#L67)   
 
 
 
