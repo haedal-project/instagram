@@ -57,11 +57,11 @@ for i in four_price :
         content += (i + "\n")
 
         
-
 five_content = ""
 for a in five :
     five_content += ( a + "\n" + "\n")
 
+    
     
     
 #four = "" # 4000원대의 가격이 없을 경우 5000원대 가격이 어떻게 나오는지 test 용도
