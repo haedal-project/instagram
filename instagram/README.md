@@ -27,9 +27,28 @@ while True:
 ### 2021.01 자동 좋아요 + 팔로우 코드 작업
 
 #### 1차 수정 : 좋아요 코드에서 추가
-if문과 elif을 추가해서 text가 팔로우면 팔로우 버튼 클릭
-아니면 pass
+***if***문과 ***elif***을 추가해서 text가 팔로우면 팔로우 버튼 클릭 아니면 pass
 
+```python
+ if value == "좋아요":
+        like.click()
+        time.sleep(random.randint(10, 15) + random.random())
+
+    elif value == "좋아요 취소":
+        time.sleep(random.randint(10, 15) + random.random())
+
+    if follow.text == "팔로우":
+        follow.click()
+        time.sleep(random.randint(10, 15) + random.random())
+        
+    elif follow.text == "팔로잉":
+        pass
+        
+    next.click()
+    time.sleep(random.randint(10, 15) + random.random())
+```
+
+<br>
 <br>
 
 #### 2차 수정 : css 선택자 오류
@@ -47,12 +66,18 @@ if문과 elif을 추가해서 text가 팔로우면 팔로우 버튼 클릭
 
 ### 2021.02 예외 처리
 #### 3차 수정 : 사진로드가 되지 않아서 아예 안뜨는 문제
+<img src = https://user-images.githubusercontent.com/74857364/150069545-a6ba45d2-b936-4338-808a-56cdfb78c272.png width="50%">
+
+
 사진이 안뜨는 경우 다음 사진으로 넘어가는 ***try~except*** 구문 사용
 
 <br>
+<br>
 
 #### 4차 수정 : 경고 메세지가 뜨는 문제
-3차 수정 코드에서 작성한 try~except 구문의 except에 try~except 구문을 추가
+<img src = https://user-images.githubusercontent.com/74857364/150069616-09454168-7f14-4eb5-b0a5-dccc9219a85b.png width="30%">
+
+3차 수정 코드에서 작성한 ***try~except*** 구문의 ***except***에 ***try~except*** 구문을 추가
 
 ```python
 try:
@@ -62,11 +87,29 @@ except:
 ```
 
 <br>
+<br>
 
 #### 5차 수정 : 제자리에서 맴도는 문제
 자동 좋아요 + 팔로우 반복을 `while True`로 계속 해오다가 `for d in range(80):` 으로 변경해서 사용
+```python
+for d in range(80):
+    # 생략
+    
+    if value == "좋아요":
+        like.click()
+        time.sleep(random.randint(10, 15) + random.random())
+
+    elif value == "좋아요 취소":
+        time.sleep(random.randint(10, 15) + random.random())
+
+    # 생략
+```
+
+<br>
 
 경고메세지가 뜨고 취소를 누른 후 다시 팔로우를 시도하는데 다시 경고메세지가 뜨는 경우 제자리에서 계속 맴돌게 된다.
+
+<img src = https://user-images.githubusercontent.com/74857364/104103799-6e840180-52e7-11eb-9bae-8931c70e44f1.gif width="50%">
 
 <br>
 
