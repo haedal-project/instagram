@@ -59,3 +59,33 @@ requests.post('https://notify-api.line.me/api/notify', headers=headers, data=dat
 #### 2차 수정
 - 메모장 활용하지 않고 가독성있게 출력 시키기    
 [코드 보기](https://github.com/haedal-project/python/blob/6499f3c477d6c7d8b9cc963bfc77783ec2bb458f/bot/coupang.py#L50)
+
+<br>
+
+---
+
+## 배경
+특정 상품의 가격이 낮춰질 때가 일주일에 한 두번 정도로 나타남
+
+사이트에 들어가서 매번 확인하기 번거로움 → 알림 봇을 만들자
+
+<br>
+
+## 특징 
+- 상품을 사고 싶은데 현재 가격을 모르면 사이트에 검색해서 찾아야하는데 알아서 알려주므로 편리하게 사용 가능
+
+- 작업 스케줄러를 이용해서 지정한 시간에 컴퓨터에서 자동으로 수행되게 할 수 있어 원하는 시간에 편리하게 확인 가능
+
+<br>
+
+### Tistory 구현 과정 링크 첨부
+[https://lu-delight.tistory.com/171](https://lu-delight.tistory.com/171)
+
+[https://lu-delight.tistory.com/172](https://lu-delight.tistory.com/172)
+
+[https://lu-delight.tistory.com/173](https://lu-delight.tistory.com/173)
+
+[https://lu-delight.tistory.com/174](https://lu-delight.tistory.com/174)
+
+[https://lu-delight.tistory.com/184](https://lu-delight.tistory.com/184)
+
