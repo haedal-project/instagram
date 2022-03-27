@@ -1,4 +1,16 @@
-# 쿠팡 최저가 상품 알림 봇(python)
+# 쿠팡 최저가 상품 알림 봇(python) 
+**4,000원대 상품이 있을 때**          
+
+<img src = https://user-images.githubusercontent.com/74857364/160288775-4669e5e1-6aef-4124-aaf1-b4e2708c28af.png width="30%">
+
+<br>
+
+**4,000원대 상품이 없을 때**            
+
+<img src = https://user-images.githubusercontent.com/74857364/160288777-32d5bbdc-df72-4570-8892-6f12360ba07b.png width="30%">
+
+<br>
+
 ## 실행 과정
 ### 1. 복잡한 css 코드 정리        
 `product = soup.select("div.name")` → `product = soup.select("div.descriptions-inner > div.name")`
