@@ -1,4 +1,8 @@
 ### 2021.01 인스타그램 자동 좋아요 코드
+<img src = https://user-images.githubusercontent.com/74857364/103893132-1b1b8300-5130-11eb-959a-56685e0661e2.gif width = "70%">
+
+<br>
+
 ```python
 # 좋아요 누르기
 while True:
@@ -19,12 +23,21 @@ while True:
         time.sleep(random.randint(2, 5) + random.random())
 ```
 
+* 컴퓨터 환경에 따라 기다리는 시간을 줄이거나 길게 조절한다.   
+
+* a 노트북에서는 2 ~ 5초 사이로 해도 화면 로딩에 문제가 없었는데           
+b 노트북에서는 가끔 로딩이 느려서 5초를 잡아먹는 경우가 있었다.      
+
+* 짧은 시간 동안 계속 좋아요를 반복하니 인스타가 봇으로 인식하기 때문에 5초 이상을 권장한다. 
 <br>
 </br>
 
 ---
 
 ### 2021.01 자동 좋아요 + 팔로우 코드 작업
+![instagram 팔로우](https://user-images.githubusercontent.com/74857364/160289688-d7c553d5-87a3-4faf-8ca3-e6a862f9d083.png)
+
+<br>
 
 #### 1차 수정 : 좋아요 코드에서 추가
 ***if***문과 ***elif***을 추가해서 text가 팔로우면 팔로우 버튼 클릭 아니면 pass
