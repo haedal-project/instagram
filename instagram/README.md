@@ -260,6 +260,21 @@ if ask == 'y':
     # 이하 생략
 ```
 
+<br><br>
+</br>
+
+#### 4차 수정 (title css 변경)
+변경 전
+```python
+title = browser.find_elements_by_css_selector("a.FPmhX.notranslate._0imsa")
+```
+<br>
+
+변경 후
+```python
+title = browser.find_elements_by_css_selector("span.Jv7Aj.mArmR.MqpiF")
+```
+
 <br>
 
 ---
