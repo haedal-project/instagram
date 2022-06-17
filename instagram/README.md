@@ -275,6 +275,27 @@ title = browser.find_elements_by_css_selector("a.FPmhX.notranslate._0imsa")
 title = browser.find_elements_by_css_selector("span.Jv7Aj.mArmR.MqpiF")
 ```
 
+<br><br></br>
+
+#### 5차 수정
+큰 화면, 작은 화면일 때 css가 변경된다.             
+
+따라서 try~except 구문을 활용하여 follow, follower, close_button 변수에               
+작은 화면.ver, 큰 화면.ver 코드를 작성했다.            
+                      
+또한 팔로워 크롤링이 다 되기도 전에 팔로잉 크롤링을 진행하는 경우를 발견하여             
+if문을 추가해 해당 수를 크롤링 하기 전까지 break를 하지 않게 코드를 작성했다.       
+```python
+while True:
+    try:
+        기능 실행
+    except:
+        if 조건:
+            break
+```
+                
+또한, 함수를 이용해서 중복되는 코드를 제거했다.      
+
 <br>
 
 ---
