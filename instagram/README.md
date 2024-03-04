@@ -169,6 +169,8 @@ if browser.current_url == 메모장에 저장한 파일 변수:
 #### 1차 수정
 크롤링 한 db를 엑셀에 저장 
 
+<img src = https://github.com/haedal-project/python/assets/74857364/7876a578-fec8-4e0a-9ac4-166cd7680ec1 width="50%"> 
+
 ```python
 # 엑셀 파일 생성
 if not os.path.exists("./인스타_크롤링.xlsx"):
